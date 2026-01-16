@@ -52,13 +52,17 @@
             justify-content: center;
             align-items: center;
             margin-right: 15px;
-            box-shadow: 0 0 15px rgba(168, 124, 94, 0.7);
+            box-shadow: 0 0 15px rgba(235, 194, 33, 0.7);
             animation: glow 2s infinite alternate;
         }
 
-        .logo i {
+        .logo img {
             font-size: 28px;
             color: #f5f1eb;
+            width: 60px;
+            height: 60px;
+             background: linear-gradient(135deg, #a87c5e, #8b5a2b);
+            border-radius: 50%;
         }
 
         .company-name {
@@ -279,7 +283,7 @@
         .admin-controls {
             margin-top: 20px;
             padding-top: 15px;
-            border-top: 1px dashed rgba(0,0,0,0.2);
+            border-top:  1px dashed rgba(0,0,0,0.2);
             display: none;
         }
 
@@ -767,9 +771,12 @@
     <header class="header">
         <div class="logo-container">
             <div class="logo">
-                <i class="fas fa-cube"></i>
+                <img src="logo.jpeg" alt="logo">
+                <!-- <i class="fas fa-cube"></i> -->
             </div>
-            <div class="company-name">SHREE LAXMI INTERBLOCKS</div>
+            <div class="company-name">SHREE LAXMI MUD AND CEMENT INTERLOCKING BRICKS
+
+            </div>
         </div>
         
         <div class="mobile-menu-btn" id="mobileMenuBtn">
@@ -803,7 +810,7 @@
             <div class="product-box" id="cement-box">
                 <h3 class="product-title"><i class="fas fa-industry"></i> Cement Blocks</h3>
                 <div class="product-image">
-                    <img src="C:\Users\User\Downloads\WhatsApp Image 2026-01-13 at 10.59.17 AM.jpg">
+                    <img src="cementblock.jpeg" alt="cement block">
                 </div>
                 <p>Our premium cement blocks are engineered for strength, durability, and versatility in construction projects of all scales.</p>
                 <h4>Advantages:</h4>
@@ -827,7 +834,7 @@
             <div class="product-box" id="mud-box">
                 <h3 class="product-title"><i class="fas fa-leaf"></i> Mud Blocks</h3>
                 <div class="product-image">
-                    <img src="C:\Users\User\Downloads\mudWhatsApp Image 2026-01-13 at 10.55.37 AM.jpg" alt="Mud Blocks" id="mud-image">
+                    <img src="mudblock.jpeg" alt="Mud Blocks" id="mud-image">
                 </div>
                 <p>Our eco-friendly mud blocks combine traditional techniques with modern innovation for sustainable building solutions.</p>
                 <h4>Advantages:</h4>
@@ -859,18 +866,31 @@
                 <!-- Gallery items will be added here dynamically -->
                 <div class="gallery-item">
                     <div class="gallery-item-type">Image</div>
-                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Construction Work">
+                    <img src="img1.jpeg" alt="Construction Work">
                     <button class="delete-btn" onclick="deleteGalleryItem(this)"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-item-type">Image</div>
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Building Blocks">
+                    <img src="img2.jpeg" alt="Building Blocks">
+                    <button class="delete-btn" onclick="deleteGalleryItem(this)"><i class="fas fa-times"></i></button>
+                </div>
+                 <div class="gallery-item">
+                    <div class="gallery-item-type">Image</div>
+                    <img src="img3.jpeg" alt="Building Blocks">
                     <button class="delete-btn" onclick="deleteGalleryItem(this)"><i class="fas fa-times"></i></button>
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-item-type">Video</div>
                     <video poster="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
-                        <source src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-worker-molding-a-clay-pot-44470-large.mp4" type="video/mp4">
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                    <button class="video-play-btn" onclick="playVideo(this)"><i class="fas fa-play"></i></button>
+                    <button class="delete-btn" onclick="deleteGalleryItem(this)"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-item-type">Video</div>
+                    <video poster="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                        <source src="video2.mp4" type="video/mp4">
                     </video>
                     <button class="video-play-btn" onclick="playVideo(this)"><i class="fas fa-play"></i></button>
                     <button class="delete-btn" onclick="deleteGalleryItem(this)"><i class="fas fa-times"></i></button>
@@ -914,23 +934,25 @@
             <div class="features-box">
                 <h3>Block Features</h3>
                 <ul class="features-list">
-                    <li><i class="fas fa-check-circle"></i> All blocks are manufactured to ISO 9001 standards</li>
-                    <li><i class="fas fa-check-circle"></i> Custom sizes and shapes available upon request</li>
-                    <li><i class="fas fa-check-circle"></i> Environmentally friendly production processes</li>
-                    <li><i class="fas fa-check-circle"></i> Third-party quality assurance testing</li>
-                    <li><i class="fas fa-check-circle"></i> Technical support and consultation services</li>
-                    <li><i class="fas fa-check-circle"></i> Bulk ordering with volume discounts</li>
-                    <li><i class="fas fa-check-circle"></i> Fast and reliable delivery across the region</li>
-                    <li><i class="fas fa-check-circle"></i> 10-year warranty on structural integrity</li>
+                    <li><i class="fas fa-check-circle"></i> Hight compressive strength for strong and stable</li>
+                    <li><i class="fas fa-check-circle"></i> smooth surface finish needs less plastering and cement</li>
+                    <li><i class="fas fa-check-circle"></i>low water absorption reduces dampness and increases wall life</li>
+                    <li><i class="fas fa-check-circle"></i> Weather Resistant for all climate conditions</li>
+                    <li><i class="fas fa-check-circle"></i> Cost-Effecient:saves cement and plaster,reducing overall construction cost</li>
+                    <li><i class="fas fa-check-circle"></i> eco-friendly Mnaufacturing with minimal material wastage</li>
+                    <li><i class="fas fa-check-circle"></i> Easy handling &stacking for safe transport and storage</li>
+                    <li><i class="fas fa-check-circle"></i>HOUSES / COMPUND WALLS / GARDEN LANDSCAPPING / COMMERCIAL PROJECTS / PAVEMENTS</li>
                 </ul>
             </div>
             
             <div class="contact-info">
                 <h3>Get In Touch</h3>
                 <p>Have questions about our products or need a custom quote? Our team is ready to assist you with all your construction needs.</p>
-                <p><i class="fas fa-envelope"></i> info@interblock.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Construction Ave, Building City, BC 56789</p>
+               
+                <p><i class="fas fa-map-marker-alt"></i> No:1-158(1)hokkadigoli,arambodi village,belthangadi D.K.574237</p>
                 <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</p>
+                <P><i class="fas fa-GST-marker-alt"></i>GST NO:29HEAPB3609K1ZH</P>
+                <P><i class="fas fa-contact"></i><b>994568129/8197402095</b></P>
                 
                 <h3 style="margin-top: 30px;">Call Us Now</h3>
                 <a href="tel:994568129" class="call-btn">
@@ -944,9 +966,9 @@
     <!-- Poster Section -->
     <section id="poster">
         <div class="poster-container">
-            <h2 class="poster-title">Our Featured Project</h2>
+            <h2 class="poster-title">ABOUT US</h2>
             <div class="poster-image-container">
-                <img src="C:\Users\User\Downloads\WhatsApp Image 2026-01-13 at 10.55.46 AM.jpg" alt="InterBlock Featured Project" class="poster-image" id="poster-image">
+                <img src="poster.jpeg" alt="InterBlock Featured Project" class="poster-image" id="poster-image">
             </div>
             
             <!-- Admin Controls for Poster (Hidden by default) -->
@@ -1151,7 +1173,7 @@
             mediaUrlInput.value = '';
             thumbnailUrlInput.value = '';
             
-            alert(${mediaType} added to gallery successfully!);
+            alert(`${mediaType} added to gallery successfully!`);
             saveGalleryToStorage();
         }
         
@@ -1255,3 +1277,4 @@
     </script>
 </body>
 </html>
+
